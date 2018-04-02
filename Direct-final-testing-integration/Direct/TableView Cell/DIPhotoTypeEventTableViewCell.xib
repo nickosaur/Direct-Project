@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DIPhotoTypeEventTableViewCell" rowHeight="191" id="KGk-i7-Jjw" customClass="DIPhotoTypeEventTableViewCell" customModule="Direct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="190.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3eS-Bq-C6g">
+                        <rect key="frame" x="274" y="20" width="120" height="120"/>
+                        <color key="backgroundColor" white="0.88" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="ShP-oi-hk9"/>
+                            <constraint firstAttribute="height" constant="120" id="sMV-An-H92"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giant VS.Pirates" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVZ-jN-UYv">
+                        <rect key="frame" x="20" y="20" width="234" height="25"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-Nm-nXO">
+                        <rect key="frame" x="22" y="48.5" width="232" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFW-Ht-eYG">
+                                <rect key="frame" x="0.0" y="0.0" width="8" height="64"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon" translatesAutoresizingMaskIntoConstraints="NO" id="a1L-Qx-53D">
+                                        <rect key="frame" x="-4" y="24.5" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Eqt-RH-lx9"/>
+                                            <constraint firstAttribute="width" constant="16" id="kff-eJ-xkr"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="APD-ZV-ptW"/>
+                                    <constraint firstItem="a1L-Qx-53D" firstAttribute="centerX" secondItem="zFW-Ht-eYG" secondAttribute="centerX" id="YVC-rU-qNj"/>
+                                    <constraint firstItem="a1L-Qx-53D" firstAttribute="centerY" secondItem="zFW-Ht-eYG" secondAttribute="centerY" id="nYF-QD-d6m"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCSD library walk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-FX-stP">
+                                <rect key="frame" x="16" y="0.0" width="216" height="64"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pmJ-Xb-unR"/>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3ta-vX-vPI">
+                        <rect key="frame" x="22" y="116.5" width="232" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxT-7W-eam">
+                                <rect key="frame" x="0.0" y="0.0" width="8" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUL-k7-FL2" customClass="DIEventStatusDotView" customModule="Direct" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="21" width="8" height="8"/>
+                                        <color key="backgroundColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="8" id="nHC-52-3mM"/>
+                                            <constraint firstAttribute="height" constant="8" id="rlE-0v-EyE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="MFv-Lc-AOS"/>
+                                    <constraint firstItem="BUL-k7-FL2" firstAttribute="centerX" secondItem="vxT-7W-eam" secondAttribute="centerX" id="gXd-fR-Zx0"/>
+                                    <constraint firstItem="BUL-k7-FL2" firstAttribute="centerY" secondItem="vxT-7W-eam" secondAttribute="centerY" id="mjk-1N-bKn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ends at 6:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCv-5Y-O90" userLabel="Ends at 6:00 PM">
+                                <rect key="frame" x="16" y="0.0" width="216" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AGX-Nm-nXO" firstAttribute="top" secondItem="DVZ-jN-UYv" secondAttribute="bottom" constant="4" id="0aE-Rb-g4g"/>
+                    <constraint firstItem="AGX-Nm-nXO" firstAttribute="trailing" secondItem="DVZ-jN-UYv" secondAttribute="trailing" id="4C4-8f-zQb"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3eS-Bq-C6g" secondAttribute="bottom" constant="20" id="SpS-gC-HKg"/>
+                    <constraint firstItem="DVZ-jN-UYv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="bT8-9c-LM9"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3ta-vX-vPI" secondAttribute="bottom" constant="20" id="eyT-ji-cys"/>
+                    <constraint firstItem="3ta-vX-vPI" firstAttribute="trailing" secondItem="AGX-Nm-nXO" secondAttribute="trailing" id="gfp-d2-utY"/>
+                    <constraint firstItem="3ta-vX-vPI" firstAttribute="top" secondItem="AGX-Nm-nXO" secondAttribute="bottom" constant="4" id="hUj-It-szn"/>
+                    <constraint firstItem="DVZ-jN-UYv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="iNr-DA-aez"/>
+                    <constraint firstItem="3eS-Bq-C6g" firstAttribute="leading" secondItem="DVZ-jN-UYv" secondAttribute="trailing" constant="20" id="iXr-cw-mkH"/>
+                    <constraint firstItem="3eS-Bq-C6g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="idG-kQ-8Or"/>
+                    <constraint firstItem="AGX-Nm-nXO" firstAttribute="leading" secondItem="DVZ-jN-UYv" secondAttribute="leading" constant="2" id="ntv-yx-Typ"/>
+                    <constraint firstItem="3ta-vX-vPI" firstAttribute="leading" secondItem="AGX-Nm-nXO" secondAttribute="leading" id="o5W-io-b7R"/>
+                    <constraint firstAttribute="trailing" secondItem="3eS-Bq-C6g" secondAttribute="trailing" constant="20" id="wTn-Dr-35u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImageView" destination="3eS-Bq-C6g" id="jc6-QQ-uqE"/>
+                <outlet property="locationLabel" destination="Ceb-FX-stP" id="BmH-5X-aYP"/>
+                <outlet property="statusDotView" destination="BUL-k7-FL2" id="uX3-r6-7CM"/>
+                <outlet property="timeLabel" destination="aCv-5Y-O90" id="JRl-bL-PVf"/>
+                <outlet property="titleLabel" destination="DVZ-jN-UYv" id="dfz-ao-8dx"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="135.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location-icon" width="24" height="24"/>
+    </resources>
+</document>
